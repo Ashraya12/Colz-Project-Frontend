@@ -52,7 +52,7 @@
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-3 ">
-                <h2 class="mb-0 site-logo"><a href="index.html">Homestay Nepal</a></h2>
+                <a href="index.html"><img class="logo" src="images/logo copy.png" alt="logo"></a>
               </div>
               <div class="col-9">
                 <nav class="site-navigation text-right" role="navigation">
@@ -67,9 +67,9 @@
                       <li class="has-children">
                         <a href="destination.html">Destinations</a>
                         <ul class="dropdown">
-                          <li><a href="destination.html">Kathmandu</a></li>
-                          <li><a href="destination.html">Bhaktapur</a></li>
-                          <li><a href="destination.html">Lalitpur</a></li>
+                          <li><a href="kathmandu.html">Kathmandu</a></li>
+                          <li><a href="kathmandu.html">Bhaktapur</a></li>
+                          <li><a href="kathmandu.html">Lalitpur</a></li>
 
                         </ul>
                       </li>
@@ -220,6 +220,106 @@
 
 
 
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="modal modol" id="my-modal">
+            <div class="modal-content">
+              <span id="close">&times;</span>
+              <form action="#" class="p-5 bg-white">
+
+                <div class="row form-group">
+                  <div class="col-md-12 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="fullname">Full Name</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold" for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email Address">
+                  </div>
+                </div>
+
+
+                <div class="row form-group">
+                  <div class="col-md-12 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="phone">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Password #">
+                  </div>
+                </div>
+
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold" for="message">Repeat Password</label>
+                    <input type="password" name="message" id="message" cols="30" rows="5" class="form-control"
+                      placeholder="Rewrite your password">
+                  </div>
+                </div>
+
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <input type="submit" value="SIGN UP" class="btn btn-primary pill px-4 py-2">
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="modal modol" id="my-modallog">
+            <div class="modall-content">
+              <span id="closel">&times;</span>
+              <form action="#" class="p-5 bg-white">
+
+
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold" for="email">Username</label>
+                    <input type="text" id="Username_id" class="form-control" placeholder="Enter your Username">
+                  </div>
+                </div>
+
+
+                <div class="row form-group">
+                  <div class="col-md-12 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="phone">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Password #">
+                  </div>
+                </div>
+
+
+
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <input type="submit" value="LOGIN" class="btn btn-primary pill px-4 py-2">
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <div class="container mt-4">
       <div class="row">
         <footer class="footer-distributed">
@@ -324,6 +424,32 @@
         });
       }
     });
+
+    var sbtn = document.getElementById("sBtn");
+    var modal = document.getElementById("my-modal");
+    var span = document.getElementById("close");
+    sbtn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+
+    var lbtn = document.getElementById("lBtn");
+    var modallog = document.getElementById("my-modallog");
+    var spanc = document.getElementById("closel");
+    lbtn.onclick = function () {
+      modallog.style.display = "block";
+    }
+    spanc.onclick = function () {
+      modallog.style.display = "none";
+    }
+    // window.onclick = function (event) {
+    //   if (event.target == modal);
+    //   modal.style.display = "none";
+    // }
+
   </script>
 
 </body>
